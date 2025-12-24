@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Wellness Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🌼 Student Wellness Tracker</h1>
+
+  <div class="card">
+    <label>Select Your Mood</label>
+    <select id="mood">
+      <option value="">--Select--</option>
+      <option value="happy">Happy</option>
+      <option value="okay">Okay</option>
+      <option value="stressed">Stressed</option>
+      <option value="tired">Tired</option>
+    </select>
+
+    <button onclick="getSuggestion()">Get Suggestion</button>
+
+    <p id="suggestion"></p>
+
+    <h3>Habit Streak</h3>
+    <p><span id="streak">0</span> days</p>
+    <button onclick="completeHabit()">Complete Today’s Habit</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
